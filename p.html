@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="p.css">
+    <div class="main-container">
+        <!-- top and top bar sec -->
+        <div class="topbar1">
+            <div class="element1 Emergency">Emergency: +91 1800-xxx-xxxx</div>
+            <div class="element1-outter">
+                <div class="element1-inner">Patient Login</div>
+                <div class="element1-inner">Book Appointment</div>
+            </div>
+        </div>
+
+        <div class="topbar2">
+            <div class="topbar-logo element">
+                <img src="https://dummyimage.com/160x50/0a64aa/ffffff&text=MAX" alt="">
+            </div>
+            <div class="element"><a href="#home">Home</a></div>
+            <div class="element"><a href="#Service">Service</a></div>
+            <div class="element"><a href="#doctor1">Doctors</a></div>
+            <div class="element"><a href="#location">Location</a></div>
+            <div class="element"><a href="#appointment">Contact</a></div>
+            <div class="element tobar-image" id="Appointment"><a href="#appointment">Book Appointment</a></div>
+        </div>
+        <!-- home sec -->
+        <div class="home" id="home">
+            <div class="home-element1">
+                <h1>World-class healthcare.</h1>
+                <h1>Compassionate care.</h1>
+                <p>Comprehensive medical services across specialties — supported by advanced technology and experienced
+                    clinicians.</p>
+                <div class="home-buttons">
+                    <button class="btn1 btn"><a href="#doctors">Find a Doctor</a></button>
+                    <button class="btn2 btn"><a href="#appointment">Book Appointment</a></button>
+                </div>
+                <div class="home-buttons">
+                    <button class="btn1 btn btn1">200+Doctors</button>
+                    <button class="btn21 btn btn1">
+                        15 specilist Center
+                    </button>
+                    <button class="btn3 btn btn1">
+                        24x7 Emergency
+                    </button>
+                </div>
+            </div>
+            <div class="home-element2">
+
+                <img src="https://img.freepik.com/free-vector/hospital-care-facebook-cover-template_23-2151152859.jpg?semt=ais_incoming&w=740&q=80"
+                    alt="">
+            </div>
+        </div>
+        <!-- doctors -->
+        <div class="doctors" id="Service">
+            <h2>Our specialties</h2>
+            <p>Advance care across department</p>
+            <div class="doc-grid">
+                <div class="doc-grid-ele">
+                    <div class="doc-grid-icon">❤️</div>
+                    <h3>Cardiology</h3>
+                    <p>Comprehensive cardiac care: cath lab, interventions and post-op rehab.</p>
+                </div>
+                <div class="doc-grid-ele">
+                    <div class="doc-grid-icon">🧠</div>
+                    <h3>Neurology & Neurosurgery</h3>
+                    <p>Stroke centre, neuro interventions, and complex neuro surgeries.</p>
+                </div>
+                <div class="doc-grid-ele">
+                    <div class="doc-grid-icon">🩺</div>
+                    <h3>Orthopedics</h3>
+                    <p>Joint replacement, trauma care and minimally invasive orthopedics.</p>
+                </div>
+                <div class="doc-grid-ele">
+                    <div class="doc-grid-icon">👶</div>
+                    <h3>Pediatrics & NICU</h3>
+                    <p>Child health services with dedicated neonatal intensive care</p>
+                </div>
+            </div>
+        </div>
+        <!-- mid sec -->
+        <div class="mid-sec" id="doctor1">
+            <h3>Teleconsultation & Remote Care</h3>
+            <p>Connect with our specialists remotely for follow-ups, second opinions and quick consultations.</p>
+            <div class="btn-sec"><a href="#Appointment">Start Telconsult</a></div>
+        </div>
+        <div id="doctor111" id="doctors">
+            <div class="div-cards"><img src="https://i.pinimg.com/1200x/86/be/66/86be6635c63def8b44f3735c0c48535e.jpg"
+                    alt="">
+                <h4>Dr.rama</h4>
+                <p>Cardiologist</p>
+            </div>
+            <div class="div-cards"><img src="http://i.pinimg.com/1200x/7e/61/86/7e61866fec30c255ea0844a2890ac7ea.jpg"
+                    alt="">
+                <h4>Dr.sana</h4>
+                <p>Neurologist</p>
+            </div>
+            <div class="div-cards"><img src="https://i.pinimg.com/736x/1f/53/55/1f53551001b4564da54be1a9d1193540.jpg"
+                    alt="">
+                <h4>Dr.raj</h4>
+                <p>Ortheopadic</p>
+            </div>
+        </div>
+        <div class="locations" id="location">
+            <h2>Our Locations</h2>
+            <p>Centres across the country</p>
+            <div class="location-grid">
+                <div class="location-grid-element">
+                    <h4>New Delhi<h4>
+                            <p>123 Healthcare Ave, New Delhi</p>
+                </div>
+                <div class="location-grid-element">
+                    <h4>Gurgaon</h4>
+                    <p>Sector 45, Gurgaon</p>
+                </div>
+                <div class="location-grid-element">
+                    <h4>Noida</h4>
+                    <p>Industrial Area, Noida</p>
+                </div>
+            </div>
+        </div>
+        <section class="appointment" id="appointment">
+            <div class="appointment1">
+                <h2>Book an Appointment</h2>
+                <form action="">
+                    <div class="row">
+                        <input type="text" placeholder="Full name" required>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="row">
+                        <input type="tel" placeholder="Phone" required>
+                        <select required>
+                            <option value="" disabled selected>Select Department</option>
+                            <option value="cardiology">Cardiology</option>
+                            <option value="neurology">Neurology</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <input type="date" required>
+                        <button type="submit">Request Appointment</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="appointment2">
+                <h2>24×7 Emergency</h2>
+                <p class="phone">+91 1800-XXX-XXXX</p>
+                <p class="desc">Visit our emergency department anytime</p>
+
+                <div class="divider"></div>
+
+                <h3>Patient Support</h3>
+                <p class="email">support@maxcare.example</p>
+            </div>
+        </section>
+    </div>
+
+
+</head>
+
+<body>

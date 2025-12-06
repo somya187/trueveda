@@ -3,19 +3,24 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-
+    position: sticky;
+    top: 18px;
+    z-index: 1000;
+    background-color: #FFFFFF;
 }
 
 body {
     margin: 0px;
     padding: 0px;
 }
-
 .topbar1 {
     display: flex;
     justify-content: space-between;
     background-color: #0f1724;
     color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .element1-outter {
@@ -411,4 +416,303 @@ button:hover {
 .appointment2 {
     background-color: #F9FCFF;
 
+}
+
+@media (max-width: 1024px) {
+
+    .home {
+        padding: 40px 24px;
+    }
+
+    .doctors .doc-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-items: center;
+        padding: 0 24px 40px;
+    }
+
+    .doc-grid-ele {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #doctor111 {
+        padding: 24px;
+    }
+
+    .appointment {
+        margin: 30px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .topbar1 {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        padding: 8px 12px;
+    }
+
+    .element1-outter {
+        justify-content: center;
+    }
+
+    .topbar2 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding: 8px 12px;
+    }
+
+    .home {
+        flex-direction: column;
+        padding: 24px 16px;
+        text-align: center;
+    }
+
+    .home-element1 {
+        max-width: 100%;
+    }
+
+    .home-element2 img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        margin: 16px auto 0;
+        display: block;
+    }
+
+    .home-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .doctors .doc-grid {
+        grid-template-columns: 1fr;
+        padding: 0 16px 32px;
+        justify-items: center;
+    }
+
+    #doctor111 {
+        grid-template-columns: 1fr;
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .locations {
+        padding: 32px 16px;
+    }
+
+    .locations>.location-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .locations>.location-grid>.location-grid-element {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .appointment {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        max-width: 100%;
+        margin: 30px 16px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .tobar-image {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .home h1 {
+        font-size: 24px;
+    }
+
+    .mid-sec {
+        padding: 24px 16px;
+    }
+
+    .appointment {
+        margin: 24px 12px;
+    }
+}
+
+#modeBtn {
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.5);
+    background-color: #0f1724;
+    color: #f9fafb;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+body.dark {
+    background: #020617;
+    /* overall deep navy */
+    color: #e5e7eb;
+}
+body.dark .topbar1{
+    background: #020617;
+    /* background: #060f35; */
+    border-bottom: 2px solid #1e293b;
+    color: #e5e7eb;
+}
+
+body.dark .topbar2 {
+    background: #060f35;
+    border-bottom: 2px solid #1e293b;
+    color: #e5e7eb;
+}
+
+body.dark .topbar2,
+body.dark .topbar2 * {
+    color: #93c5fd !important;
+    /* light blue text */
+}
+body.dark .home {
+    background: linear-gradient(135deg, #020617, #0b1120);
+}
+
+body.dark .home h1 {
+    color: #c7d2fe;
+    /* soft indigo */
+}
+
+body.dark .home p {
+    color: #cbd5f5;
+}
+
+body.dark .home .btn {
+    background: linear-gradient(135deg, #6366f1, #0ea5e9);
+    color: #020617;
+}
+
+body.dark .doctors {
+    background: #020617;
+}
+
+body.dark .doctors h2 {
+    color: #38bdf8;
+    /* cyan */
+}
+
+body.dark .doctors p {
+    color: #9ca3af;
+}
+
+body.dark .doc-grid-ele {
+    background: #0b1120;
+    border: 1px solid #164e63;
+    color: #e5e7eb;
+}
+
+body.dark .doc-grid-ele:hover {
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+}
+
+body.dark .mid-sec {
+    background: linear-gradient(145deg, #020617, #022c22);
+    color: #ccfbf1;
+}
+
+body.dark .mid-sec .btn-sec {
+    background: #14b8a6;
+    color: #022c22;
+}
+
+body.dark #doctor111 {
+    background: #020617;
+}
+
+body.dark #doctor111 .div-cards {
+    background: #0b1120;
+    border: 1px solid #312e81;
+}
+
+body.dark #doctor111 h4 {
+    color: #ddd6fe;
+    /* light purple */
+}
+
+body.dark #doctor111 p {
+    color: #9ca3af;
+}
+body.dark .locations {
+    background: #020617;
+}
+
+body.dark .locations h2 {
+    color: #86efac;
+    /* light green */
+}
+
+body.dark .location-grid-element {
+    background: #052e16;
+    border: 1px solid #166534;
+    color: #dcfce7;
+}
+
+body.dark .location-grid-element p {
+    color: #bbf7d0;
+}
+body.dark .appointment {
+    background: #1c1917;
+    border: 1px solid #92400e;
+    color: #fef3c7;
+}
+
+body.dark .appointment2 {
+    background: #292524;
+}
+
+body.dark input,
+body.dark textarea,
+body.dark select {
+    background: #020617;
+    color: #fef3c7;
+    border: 1px solid #92400e;
+}
+
+body.dark input::placeholder,
+body.dark textarea::placeholder {
+    color: #fbbf24;
+}
+body.dark button {
+    background: linear-gradient(135deg, #0ea5e9, #6366f1);
+    color: #020617;
+    border: none;
+}
+#modeBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 14px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #0ea5e9, #6366f1);
+    color: white;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.85);
+    transition: 0.25s;
+    z-index: 9999;
+}
+
+#modeBtn:hover {
+    transform: translateY(-2px) scale(1.05);
 }

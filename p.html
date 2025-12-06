@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="p.css">
+</head>
+<body>
+    
+
     <div class="main-container">
         <!-- top and top bar sec -->
         <div class="topbar1">
@@ -20,6 +24,7 @@
             <div class="topbar-logo element">
                 <img src="https://dummyimage.com/160x50/0a64aa/ffffff&text=MAX" alt="">
             </div>
+            <button id="modeBtn">🌙</button>
             <div class="element"><a href="#home">Home</a></div>
             <div class="element"><a href="#Service">Service</a></div>
             <div class="element"><a href="#doctor1">Doctors</a></div>
@@ -57,9 +62,9 @@
         <!-- doctors -->
         <div class="doctors" id="Service">
             <h2>Our specialties</h2>
-            <p>Advance care across department</p>
+            <p id="expert" style="margin-bottom: 10px;">Advance care across department</p>
             <div class="doc-grid">
-                <div class="doc-grid-ele">
+                <div class="doc-grid-ele" id="expert2">
                     <div class="doc-grid-icon">❤️</div>
                     <h3>Cardiology</h3>
                     <p>Comprehensive cardiac care: cath lab, interventions and post-op rehab.</p>
@@ -157,8 +162,6 @@
             </div>
         </section>
     </div>
-
-
-</head>
-
-<body>
+    <script src="p.js"></script>
+</body>
+</html>
